@@ -8,42 +8,29 @@ import { Button } from "@/components/ui/button"
 
 export function NavBar() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white">
+    <header className="sticky top-0 z-50 w-full border-b border-b2b-gray-200 bg-b2b-dark-primary">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6">
         <div className="flex items-center gap-6">
           <Link href="/" className="flex items-center gap-2">
-            <div className="h-8 w-8">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-full w-full">
-                <path
-                  d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                  stroke="#2563EB"
-                  strokeWidth="2"
-                />
-                <path
-                  d="M15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13"
-                  stroke="#2563EB"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M12 13V17M12 17H9M12 17H15"
-                  stroke="#2563EB"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                />
-              </svg>
+            <div className="h-8 w-8 relative">
+              <Image
+                src="/favicon.png"
+                alt="quote.dev logo"
+                fill
+                className="object-contain"
+              />
             </div>
-            <span className="text-lg font-bold text-b2b-primary">quote.dev</span>
+            <span className="text-lg font-bold text-b2b-yellow-500">quote.dev</span>
           </Link>
           <div className="hidden md:block lg:w-64">
             <div className="relative">
               <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                <Search className="h-4 w-4 text-gray-400" />
+                <Search className="h-4 w-4 text-b2b-gray-400" />
               </div>
               <Input
                 type="search"
                 placeholder="Search quotes, products, vendors..."
-                className="w-full bg-gray-100 pl-10 text-sm placeholder:text-gray-500"
+                className="w-full bg-b2b-dark-secondary border-b2b-dark-tertiary text-white pl-10 text-sm placeholder:text-b2b-gray-400"
               />
             </div>
           </div>
@@ -53,7 +40,7 @@ export function NavBar() {
             <li>
               <Link
                 href="/"
-                className="flex flex-col items-center justify-center px-2 py-2 text-sm font-medium text-gray-500 hover:text-gray-700"
+                className="flex flex-col items-center justify-center px-2 py-2 text-sm font-medium text-b2b-gray-300 hover:text-white"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +63,7 @@ export function NavBar() {
             <li>
               <Link
                 href="/quotes"
-                className="flex flex-col items-center justify-center px-2 py-2 text-sm font-medium text-b2b-primary hover:text-b2b-secondary"
+                className="flex flex-col items-center justify-center px-2 py-2 text-sm font-medium text-b2b-yellow-500 hover:text-b2b-yellow-300"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -102,7 +89,7 @@ export function NavBar() {
             <li>
               <Link
                 href="/vendors"
-                className="flex flex-col items-center justify-center px-2 py-2 text-sm font-medium text-gray-500 hover:text-gray-700"
+                className="flex flex-col items-center justify-center px-2 py-2 text-sm font-medium text-b2b-gray-300 hover:text-white"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -127,7 +114,7 @@ export function NavBar() {
             <li>
               <Link
                 href="/discussions"
-                className="flex flex-col items-center justify-center px-2 py-2 text-sm font-medium text-gray-500 hover:text-gray-700"
+                className="flex flex-col items-center justify-center px-2 py-2 text-sm font-medium text-b2b-gray-300 hover:text-white"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -149,7 +136,7 @@ export function NavBar() {
             <li>
               <Link
                 href="/leaderboard"
-                className="flex flex-col items-center justify-center px-2 py-2 text-sm font-medium text-gray-500 hover:text-gray-700"
+                className="flex flex-col items-center justify-center px-2 py-2 text-sm font-medium text-b2b-gray-300 hover:text-white"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -177,12 +164,12 @@ export function NavBar() {
         <div className="flex items-center gap-4">
           <Link
             href="/sign-in"
-            className="hidden items-center justify-center whitespace-nowrap text-sm font-medium text-b2b-dark transition-colors hover:text-b2b-primary focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 md:block"
+            className="hidden items-center justify-center whitespace-nowrap text-sm font-medium text-white transition-colors hover:text-b2b-yellow-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-b2b-yellow-500 disabled:pointer-events-none disabled:opacity-50 md:block"
           >
             Sign in
           </Link>
           <Button
-            className="rounded-full bg-b2b-primary text-white hover:bg-b2b-secondary"
+            className="rounded-md bg-b2b-yellow-500 text-black hover:bg-b2b-yellow-400"
           >
             Add Quote
           </Button>

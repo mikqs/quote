@@ -96,70 +96,70 @@ const getValidationClass = (quote: QuoteWithValidations) => {
 
 export function RecentQuotes() {
   return (
-    <section className="py-8 md:py-12">
+    <section className="bg-b2b-dark-primary py-8 md:py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-6 flex flex-col md:flex-row md:items-center md:justify-between">
           <div>
-            <h2 className="text-2xl font-bold text-gray-900">Recently Shared Quotes</h2>
-            <p className="mt-2 text-sm text-gray-600">
+            <h2 className="text-2xl font-bold text-white">Recently Shared Quotes</h2>
+            <p className="mt-2 text-sm text-b2b-gray-300">
               Anonymous quotes submitted by the community with price transparency validation
             </p>
           </div>
-          <Button className="mt-4 bg-b2b-primary hover:bg-b2b-secondary md:mt-0">
+          <Button className="mt-4 bg-b2b-yellow-500 text-black hover:bg-b2b-yellow-400 md:mt-0">
             Submit a Quote
           </Button>
         </div>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {recentQuotes.map((quote) => (
-            <Card key={quote.id} className={`overflow-hidden transition-shadow hover:shadow-md ${getValidationClass(quote)}`}>
+            <Card key={quote.id} className={`overflow-hidden transition-shadow hover:shadow-md bg-b2b-dark-secondary text-white border-b2b-dark-tertiary ${getValidationClass(quote)}`}>
               <CardHeader className="pb-2">
                 <div className="flex items-center justify-between">
-                  <Badge className="bg-b2b-accent">{quote.category}</Badge>
-                  <Badge variant="outline" className="text-gray-500">
+                  <Badge className="bg-b2b-yellow-500 text-black font-medium">{quote.category}</Badge>
+                  <Badge variant="outline" className="border-b2b-dark-tertiary text-b2b-gray-300">
                     {formatDistanceToNow(quote.submittedAt, { addSuffix: true })}
                   </Badge>
                 </div>
-                <CardTitle className="mt-3 line-clamp-2 text-lg">
+                <CardTitle className="mt-3 line-clamp-2 text-lg text-white">
                   {quote.equipmentType}
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-3 text-sm">
                   <div className="flex justify-between">
-                    <span className="text-gray-500">Manufacturer:</span>
-                    <span className="font-medium">{quote.manufacturer}</span>
+                    <span className="text-b2b-gray-300">Manufacturer:</span>
+                    <span className="font-medium text-white">{quote.manufacturer}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-gray-500">Model:</span>
-                    <span className="font-medium">{quote.model}</span>
+                    <span className="text-b2b-gray-300">Model:</span>
+                    <span className="font-medium text-white">{quote.model}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-gray-500">Price:</span>
-                    <span className="font-bold text-b2b-primary">{quote.price}</span>
+                    <span className="text-b2b-gray-300">Price:</span>
+                    <span className="font-bold text-b2b-yellow-500">{quote.price}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-gray-500">Lead Time:</span>
-                    <span className="font-medium">{quote.leadTime}</span>
+                    <span className="text-b2b-gray-300">Lead Time:</span>
+                    <span className="font-medium text-white">{quote.leadTime}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-gray-500">Region:</span>
-                    <span className="font-medium">{quote.region}</span>
+                    <span className="text-b2b-gray-300">Region:</span>
+                    <span className="font-medium text-white">{quote.region}</span>
                   </div>
                   <div className="flex flex-wrap gap-2 pt-2">
                     {quote.includesInstallation && (
-                      <Badge variant="outline" className="bg-b2b-gray-100">Installation</Badge>
+                      <Badge variant="outline" className="bg-b2b-dark-tertiary border-b2b-dark-tertiary text-b2b-gray-300">Installation</Badge>
                     )}
                     {quote.includesTraining && (
-                      <Badge variant="outline" className="bg-b2b-gray-100">Training</Badge>
+                      <Badge variant="outline" className="bg-b2b-dark-tertiary border-b2b-dark-tertiary text-b2b-gray-300">Training</Badge>
                     )}
                   </div>
                 </div>
               </CardContent>
-              <CardFooter className="border-t pt-4">
+              <CardFooter className="border-t border-b2b-dark-tertiary pt-4">
                 <div className="flex w-full items-center justify-between">
                   <div className="flex items-center gap-2">
-                    <span className="flex items-center text-xs text-gray-500">
+                    <span className="flex items-center text-xs text-b2b-gray-300">
                       <svg
                         className="mr-1 h-4 w-4 text-b2b-success"
                         fill="none"
@@ -176,7 +176,7 @@ export function RecentQuotes() {
                       </svg>
                       {quote.validations.accurate}
                     </span>
-                    <span className="flex items-center text-xs text-gray-500">
+                    <span className="flex items-center text-xs text-b2b-gray-300">
                       <svg
                         className="mr-1 h-4 w-4 text-b2b-warning"
                         fill="none"
@@ -193,7 +193,7 @@ export function RecentQuotes() {
                       </svg>
                       {quote.validations.tooHigh}
                     </span>
-                    <span className="flex items-center text-xs text-gray-500">
+                    <span className="flex items-center text-xs text-b2b-gray-300">
                       <svg
                         className="mr-1 h-4 w-4 text-b2b-danger"
                         fill="none"
@@ -213,7 +213,7 @@ export function RecentQuotes() {
                   </div>
                   <Link
                     href={`/quotes/${quote.id}`}
-                    className="text-xs font-medium text-b2b-primary hover:text-b2b-secondary"
+                    className="text-xs font-medium text-b2b-yellow-500 hover:text-b2b-yellow-300"
                   >
                     View Details
                   </Link>
@@ -226,7 +226,7 @@ export function RecentQuotes() {
         <div className="mt-8 text-center">
           <Link
             href="/quotes"
-            className="text-b2b-primary hover:text-b2b-secondary"
+            className="text-b2b-yellow-500 hover:text-b2b-yellow-300"
           >
             View all quotes
           </Link>

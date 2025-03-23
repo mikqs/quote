@@ -4,136 +4,136 @@ import Link from "next/link"
 
 export function Footer() {
   return (
-    <footer className="border-t border-gray-200 bg-white py-12">
+    <footer className="border-t border-b2b-dark-tertiary bg-b2b-dark-primary py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-6">
           <div>
-            <h3 className="text-sm font-medium text-gray-900">About</h3>
+            <h3 className="text-sm font-medium text-white">About</h3>
             <ul className="mt-4 space-y-4">
               <li>
-                <Link href="/about" className="text-sm text-gray-500 hover:text-b2b-primary">
+                <Link href="/about" className="text-sm text-b2b-gray-300 hover:text-b2b-yellow-500">
                   About quote.dev
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-sm text-gray-500 hover:text-b2b-primary">
+                <Link href="/blog" className="text-sm text-b2b-gray-300 hover:text-b2b-yellow-500">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="/careers" className="text-sm text-gray-500 hover:text-b2b-primary">
+                <Link href="/careers" className="text-sm text-b2b-gray-300 hover:text-b2b-yellow-500">
                   Careers
                 </Link>
               </li>
               <li>
-                <Link href="/press" className="text-sm text-gray-500 hover:text-b2b-primary">
+                <Link href="/press" className="text-sm text-b2b-gray-300 hover:text-b2b-yellow-500">
                   Press
                 </Link>
               </li>
             </ul>
           </div>
           <div>
-            <h3 className="text-sm font-medium text-gray-900">Resources</h3>
+            <h3 className="text-sm font-medium text-white">Resources</h3>
             <ul className="mt-4 space-y-4">
               <li>
-                <Link href="/privacy-policy" className="text-sm text-gray-500 hover:text-b2b-primary">
+                <Link href="/privacy-policy" className="text-sm text-b2b-gray-300 hover:text-b2b-yellow-500">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/terms-of-service" className="text-sm text-gray-500 hover:text-b2b-primary">
+                <Link href="/terms-of-service" className="text-sm text-b2b-gray-300 hover:text-b2b-yellow-500">
                   Terms of Service
                 </Link>
               </li>
               <li>
-                <Link href="/community-guidelines" className="text-sm text-gray-500 hover:text-b2b-primary">
+                <Link href="/community-guidelines" className="text-sm text-b2b-gray-300 hover:text-b2b-yellow-500">
                   Community Guidelines
                 </Link>
               </li>
               <li>
-                <Link href="/faq" className="text-sm text-gray-500 hover:text-b2b-primary">
+                <Link href="/faq" className="text-sm text-b2b-gray-300 hover:text-b2b-yellow-500">
                   FAQ
                 </Link>
               </li>
             </ul>
           </div>
           <div>
-            <h3 className="text-sm font-medium text-gray-900">Categories</h3>
+            <h3 className="text-sm font-medium text-white">Categories</h3>
             <ul className="mt-4 space-y-4">
               <li>
-                <Link href="/quotes/categories/cnc-machines" className="text-sm text-gray-500 hover:text-b2b-primary">
+                <Link href="/quotes/categories/cnc-machines" className="text-sm text-b2b-gray-300 hover:text-b2b-yellow-500">
                   CNC Machines
                 </Link>
               </li>
               <li>
-                <Link href="/quotes/categories/industrial-robots" className="text-sm text-gray-500 hover:text-b2b-primary">
+                <Link href="/quotes/categories/industrial-robots" className="text-sm text-b2b-gray-300 hover:text-b2b-yellow-500">
                   Industrial Robots
                 </Link>
               </li>
               <li>
-                <Link href="/quotes/categories/injection-molders" className="text-sm text-gray-500 hover:text-b2b-primary">
+                <Link href="/quotes/categories/injection-molders" className="text-sm text-b2b-gray-300 hover:text-b2b-yellow-500">
                   Injection Molders
                 </Link>
               </li>
               <li>
-                <Link href="/quotes/categories" className="text-sm text-gray-500 hover:text-b2b-primary">
+                <Link href="/quotes/categories" className="text-sm text-b2b-gray-300 hover:text-b2b-yellow-500">
                   All Categories
                 </Link>
               </li>
             </ul>
           </div>
           <div>
-            <h3 className="text-sm font-medium text-gray-900">Features</h3>
+            <h3 className="text-sm font-medium text-white">Features</h3>
             <ul className="mt-4 space-y-4">
               <li>
-                <Link href="/submit-quote" className="text-sm text-gray-500 hover:text-b2b-primary">
+                <Link href="/submit-quote" className="text-sm text-b2b-gray-300 hover:text-b2b-yellow-500">
                   Submit a Quote
                 </Link>
               </li>
               <li>
-                <Link href="/validate-quotes" className="text-sm text-gray-500 hover:text-b2b-primary">
+                <Link href="/validate-quotes" className="text-sm text-b2b-gray-300 hover:text-b2b-yellow-500">
                   Validate Quotes
                 </Link>
               </li>
               <li>
-                <Link href="/vendor-transparency" className="text-sm text-gray-500 hover:text-b2b-primary">
+                <Link href="/vendor-transparency" className="text-sm text-b2b-gray-300 hover:text-b2b-yellow-500">
                   Vendor Transparency
                 </Link>
               </li>
               <li>
-                <Link href="/leaderboard" className="text-sm text-gray-500 hover:text-b2b-primary">
+                <Link href="/leaderboard" className="text-sm text-b2b-gray-300 hover:text-b2b-yellow-500">
                   Leaderboard
                 </Link>
               </li>
             </ul>
           </div>
           <div className="col-span-2">
-            <h3 className="text-sm font-medium text-gray-900">Stay Updated</h3>
-            <p className="mt-4 text-sm text-gray-500">
+            <h3 className="text-sm font-medium text-white">Stay Updated</h3>
+            <p className="mt-4 text-sm text-b2b-gray-300">
               Subscribe to our newsletter for the latest price trends and industry updates.
             </p>
             <div className="mt-4 flex max-w-md">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="w-full flex-1 rounded-l-md border-y border-l border-gray-300 bg-white px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-b2b-primary"
+                className="w-full flex-1 rounded-l-md border-y border-l border-b2b-dark-tertiary bg-b2b-dark-secondary px-3 py-2 text-sm text-white placeholder:text-b2b-gray-400 focus:outline-none focus:ring-2 focus:ring-b2b-yellow-500"
               />
               <button
                 type="button"
-                className="rounded-r-md border border-b2b-primary bg-b2b-primary px-4 py-2 text-sm text-white hover:bg-b2b-secondary focus:outline-none focus:ring-2 focus:ring-b2b-primary"
+                className="rounded-r-md border border-b2b-yellow-500 bg-b2b-yellow-500 px-4 py-2 text-sm text-black font-medium hover:bg-b2b-yellow-400 focus:outline-none focus:ring-2 focus:ring-b2b-yellow-500"
               >
                 Subscribe
               </button>
             </div>
           </div>
         </div>
-        <div className="mt-12 border-t border-gray-200 pt-8">
+        <div className="mt-12 border-t border-b2b-dark-tertiary pt-8">
           <div className="flex flex-col items-center justify-between md:flex-row">
-            <p className="text-sm text-gray-500">&copy; 2025 quote.dev Inc. All rights reserved.</p>
+            <p className="text-sm text-b2b-gray-300">&copy; 2025 quote.dev Inc. All rights reserved.</p>
             <div className="mt-4 flex space-x-6 md:mt-0">
               <Link
                 href="#"
-                className="text-gray-400 hover:text-b2b-primary"
+                className="text-b2b-gray-400 hover:text-b2b-yellow-500"
                 aria-label="LinkedIn"
               >
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -146,7 +146,7 @@ export function Footer() {
               </Link>
               <Link
                 href="#"
-                className="text-gray-400 hover:text-b2b-primary"
+                className="text-b2b-gray-400 hover:text-b2b-yellow-500"
                 aria-label="Twitter"
               >
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -157,7 +157,7 @@ export function Footer() {
               </Link>
               <Link
                 href="#"
-                className="text-gray-400 hover:text-b2b-primary"
+                className="text-b2b-gray-400 hover:text-b2b-yellow-500"
                 aria-label="GitHub"
               >
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

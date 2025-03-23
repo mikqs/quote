@@ -7,8 +7,16 @@ import { Footer } from "@/components/footer";
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
-  title: "Blind Salary Database: Uncover pay transparency insights with our comparison tool",
-  description: "Discover comprehensive salary data and insights on Blind. Gain transparency into professional compensation across various industries and roles.",
+  title: "quote.dev: Compare Industrial Machinery Quotes Anonymously",
+  description: "Discover real pricing data for industrial equipment and machinery on quote.dev. Gain transparency into vendor quotes across various industries.",
+  icons: {
+    icon: [
+      {
+        url: '/favicon.png',
+        href: '/favicon.png',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
