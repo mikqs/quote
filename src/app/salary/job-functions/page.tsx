@@ -62,7 +62,7 @@ const jobCategories: JobCategory[] = [
   },
 ]
 
-export default function JobFunctionsPage() {
+export default async function JobFunctionsPage() {
   return (
     <main className="min-h-screen bg-white py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

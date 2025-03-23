@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "Discover comprehensive salary data and insights on Blind. Gain transparency into professional compensation across various industries and roles.",
 }
 
-export default function SalaryPage() {
+export default async function SalaryPage() {
   return (
     <main className="min-h-screen">
       <SalaryHeader />

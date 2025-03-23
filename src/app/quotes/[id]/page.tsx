@@ -107,7 +107,14 @@ type Params = {
   id: string;
 }
 
-export default function QuoteDetailPage({ params }: { params: Params }) {
+export default async function QuoteDetailPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  // In a real app, you would fetch the quote data here based on params.id
+  // For example: const { id } = await params; const quote = await getQuoteById(id);
+  
   return (
     <div className="container mx-auto px-4 py-8">
       {/* Back button */}

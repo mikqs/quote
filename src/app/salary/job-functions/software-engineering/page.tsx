@@ -59,7 +59,7 @@ const salaryPosts = [
   },
 ]
 
-export default function SoftwareEngineerSalaryPage() {
+export default async function SoftwareEngineerSalaryPage() {
   return (
     <main className="min-h-screen">
       <nav className="border-b border-gray-200 bg-white">

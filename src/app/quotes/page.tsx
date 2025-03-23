@@ -225,7 +225,7 @@ const formatDate = (date: Date) => {
   }).format(date)
 }
 
-export default function QuotesPage() {
+export default async function QuotesPage() {
   return (
     <div className="container mx-auto px-4 py-8">
       {/* Dashboard Stats */}

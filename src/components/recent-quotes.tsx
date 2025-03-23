@@ -75,7 +75,15 @@ const recentQuotes = [
   },
 ]
 
-const getValidationClass = (quote) => {
+type QuoteWithValidations = {
+  validations: {
+    accurate: number;
+    tooHigh: number;
+    tooLow: number;
+  }
+}
+
+const getValidationClass = (quote: QuoteWithValidations) => {
   const total = quote.validations.accurate + quote.validations.tooHigh + quote.validations.tooLow
   if (total === 0) return ""
 

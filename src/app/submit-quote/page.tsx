@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: "Anonymously share your industrial machinery quotes to help create pricing transparency in the B2B marketplace."
 }
 
-export default function SubmitQuotePage() {
+export default async function SubmitQuotePage() {
   return (
     <main className="container mx-auto py-10">
       <div className="mx-auto max-w-5xl">
