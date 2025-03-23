@@ -1,0 +1,43 @@
+# dependencies
+node_modules/
+
+# production
+.next/
+out/
+
+# testing
+coverage/
+*.lcov
+
+# local env files
+.env*
+!.env.example
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+
+# Optional: Ignore build output if deploying elsewhere
+build/
+
+#temp
+temp
+
+#cache
+cache
+
+#log
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
